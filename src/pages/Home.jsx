@@ -1,5 +1,3 @@
-//THis is the HOME PAGE
-//HEHEH2
 import { Canvas } from '@react-three/fiber';
 import { Suspense, useState } from 'react';
 import Loader from '../components/Loader';
