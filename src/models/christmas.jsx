@@ -121,7 +121,7 @@ const christmas = ({ isRotating , setisRotating,setCurrentStage, ...props}) => {
       rotationSpeed.current *= dampingFactor;
 
       //when its slow enough, will stop the rotation
-      if(Math.abs(rotationSpeed.current) < 0.0001){
+      if(Math.abs(rotationSpeed.current) < 0.000001){
         rotationSpeed.current = 0;
 
 
