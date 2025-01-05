@@ -27,7 +27,7 @@ const Home = () => {
             screenScale = [0.55, 0.55, 0.55];
             
         }else{
-            screenScale =[70, 70, 70];
+            screenScale =[90, 90, 90];
            
         }
 
