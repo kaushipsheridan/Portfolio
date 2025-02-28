@@ -27,7 +27,7 @@ const Contact = () => {
                 from_name: form.name,
                 to_name: "Priyanshu Kaushik",
                 from_email: form.email,
-                to_email: 'priyanshu15112004@gmail.com',
+                to_email: 'kaushipr@sheridancollege.ca',
                 message: form.message,
                 
             },
