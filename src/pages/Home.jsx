@@ -14,7 +14,7 @@ const Home = () => {
 
     const [isRotating, setisRotating] = useState(false);
 
-    const [currentStage, setCurrentStage] = useState(0);
+    const [currentStage, setCurrentStage] = useState(1);
 
     
 

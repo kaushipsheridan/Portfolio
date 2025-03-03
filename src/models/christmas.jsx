@@ -33,6 +33,7 @@ const christmas = ({ isRotating , setisRotating,setCurrentStage, ...props}) => {
 
     //storing the last position of the mouse and figuring out if its a touch on phone or a click on Computer
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    
     //now stroing the last touch or click position
     lastX.current = clientX;
   }
@@ -60,13 +61,13 @@ const christmas = ({ isRotating , setisRotating,setCurrentStage, ...props}) => {
 
     //now updating the rotation of the island based on change calculated .....delta
     //we are calulating and updating in reference to a circle
-    christmasRef.current.rotation.y -= delta * Math.PI * 0.01; 
+    christmasRef.current.rotation.y -= delta * Math.PI * 0.005; 
 
     //now updating the new position
     lastX.current = clientX;
 
     //updating rotation speed with the same delta
-    rotationSpeed.current = delta * Math.PI * 0.01;
+    rotationSpeed.current = delta * Math.PI * 0.005;
     }
   
   }
@@ -75,10 +76,10 @@ const christmas = ({ isRotating , setisRotating,setCurrentStage, ...props}) => {
   const handleKeyDown = (e) => {
     if(e.key==='ArrowLeft'){
       if (!isRotating) setisRotating(true);
-      christmasRef.current.rotation.y-=0.01*Math.PI;
+      christmasRef.current.rotation.y-=0.005*Math.PI;
     }else if(e.key==='ArrowRight'){
       if (!isRotating) setisRotating(true);
-      christmasRef.current.rotation.y+=0.01*Math.PI;
+      christmasRef.current.rotation.y+=0.005*Math.PI;
     }
   }
 
